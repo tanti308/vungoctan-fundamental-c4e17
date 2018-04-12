@@ -1,8 +1,9 @@
 n= int(input("Enter a number?"))
-factorial=1
 
-for i in range(0,n+1,1):
-    factorial= factorial * (factorial +1)
-
-
-print("n! =", factorial)
+if n == 0:
+    print("n! =", 0)
+else:
+    factorial=1
+    for i in range(1,n+1,1):
+        factorial= factorial * i
+    print("n! =", factorial)
