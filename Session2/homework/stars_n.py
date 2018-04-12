@@ -1,4 +1,4 @@
-n= int(input("Enter a number of stars?"))
+n= int(input("Enter number of stars?"))
 
 if n%2==0:
     for i in range(0,n,2):
