@@ -7,3 +7,4 @@ if n%2==0:
 else:
     for i in range(n):
         print("*", end="")
+print()

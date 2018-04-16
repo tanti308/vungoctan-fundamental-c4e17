@@ -4,6 +4,7 @@ w= int(input("Your weight (kg)?"))
 h= float(a/100)
 
 bmi= float(w/h**2)
+print("BMI=", bmi)
 if bmi <16:
     print("Severely underweight")
 elif 16<= bmi <18.5:
