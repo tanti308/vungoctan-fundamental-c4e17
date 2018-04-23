@@ -1,17 +1,4 @@
-px = 1
-py = 1
-# p = {
-#     "x": 1,
-#     "y": 1
-# }
-
-bx = 2
-by = 2
-
-# b = {
-#     "x": 2,
-#     "y": 2
-# }
+p = {"x": 1,"y": 1}
 
 boxes = [
     {
@@ -24,7 +11,7 @@ boxes = [
     }
 ]
 
-# print(boxes[0]["x"])
+ # print(boxes[0]["x"])
 
 for box in boxes:
     print(box["y"])
@@ -32,9 +19,9 @@ for box in boxes:
 while True:
     for y in range(4):
         for x in range(4):
-            if x == px and y == py:
+            if x == p["x"] and y == p["y"]:
                 print("P ", end="")
-            elif x == bx and y == by:
+            elif x == b[0]["x"] and y == b[0]["y"] or x == b[1]["x"] and y == b[1]["y"]:
                 print("B ", end="")
             elif x == 1 and y == 3:
                 print("G ", end="")
@@ -44,13 +31,11 @@ while True:
 
     move = input("Your move (W/A/S/D)? ").upper()
 
-    next_px = px
-    next_py = py
+    next_px = p["x"]
+    next_py = p["y"]
 
     dx = 0
     dy = 0
-
-    # next_p = p + d
 
     if move == "D":
         dx = 1
