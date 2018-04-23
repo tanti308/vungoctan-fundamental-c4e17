@@ -1,19 +1,5 @@
 p = {"x": 1,"y": 1}
-
-boxes = [
-    {
-        "x": 2,
-        "y": 2
-    },
-    {
-        "x": 3,
-        "y": 4
-    }
-]
-
-# for box in boxes:
-#     print(box["y"])
-
+b = {"x": 2,"y": 2}
 while True:
     for y in range(4):
         for x in range(4):
@@ -53,7 +39,7 @@ while True:
     if next_px == b["x"] and next_py == b["y"]:
         b["x"] += dx
         b["y"] += dy
-
+    
 
     if 0 <= next_px < 4:
         p["x"] = next_px

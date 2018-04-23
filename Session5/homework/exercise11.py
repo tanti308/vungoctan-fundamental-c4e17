@@ -1,18 +1,14 @@
 p = {"x": 1,"y": 1}
-b = {"x": 2,"y": 2}
-while True:
+bx=2
+by=2
+loop= True
+while loop:
     for y in range(4):
         for x in range(4):
             if x  == p["x"] and y == p["y"]:
                 print("P ", end="")
-            elif x == b["x"] and y == b["y"]:
-                if b["x"] ==1 and b["y"] == 3:
-                    if p["x"] ==1 and p["y"] ==3:
-                        print("Congrat!")
-                    else:
-                        print("G ", end="")
-                else:
-                    print("B ", end="")
+            elif x == bx and y == by:
+                print("B ", end="")
             elif x == 1 and y == 3:
                 print("G ", end="")
             else:
@@ -20,6 +16,10 @@ while True:
         print()
 
     move = input("Your move (W/A/S/D)? ").upper()
+
+    if bx ==1 and by==3:
+        print("Congrat!")
+        loop=False
 
     next_px = p["x"]
     next_py = p["y"]
@@ -38,10 +38,12 @@ while True:
     next_px += dx
     next_py += dy
 
-    if next_px == b["x"] and next_py == b["y"]:
-        b["x"] += dx
-        b["y"] += dy
-
+    if next_px == bx and next_py == by:
+        bx += dx
+        by += dy
+    if bx ==1 and by==3:
+        print("Congrat!")
+        loop=False
     if 0 <= next_px < 4:
         p["x"] = next_px
 
