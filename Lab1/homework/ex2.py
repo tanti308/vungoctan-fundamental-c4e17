@@ -19,4 +19,4 @@ post = {
     Cớ sao bên ấy chẳng sang bên này?...
     '''
 }
-blog.insert_one(post)
+# blog.insert_one(post)
