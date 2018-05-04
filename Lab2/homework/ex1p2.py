@@ -3,13 +3,8 @@ from bs4 import BeautifulSoup
 from youtube_dl import YoutubeDL
 
 url = "https://www.apple.com/itunes/charts/songs"
-conn = urlopen(url)
 
-raw_data = conn.read()
-text = raw_data.decode("utf8")
-
-
-soup = BeautifulSoup(text, "html.parser")
+soup = BeautifulSoup(urlopen(url).read().decode("utf8"), "html.parser")
 section = soup.find("section","section chart-grid")
 ul = section.find("ul")
 
