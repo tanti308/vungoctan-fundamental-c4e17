@@ -1,5 +1,5 @@
-def is_inside(list_1, list_2):
-    if  list_2[0] <= list_1[0] <= list_2[0] + list_2[2] and list_2[1] <= list_1[1] <= list_2[1] + list_2[3]:
+def is_inside(a, b):
+    if  b[0] <= a[0] <= b[0] + b[2] and b[1] <= a[1] <= b[1] + b[3]:
         return True
     else:
         return False
