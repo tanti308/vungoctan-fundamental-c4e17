@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask intro</title>
+  </head>
+  <body>
+    <h3>C4E Blog</h3>
+    <!-- cu phap jinja2 -->
+    {% for post in posts%}
+      <h5>{{ post.title }}</h5>
+      <p>
+        {{ post.content }}
+      </p>
+      <i> By:
+        <!-- search conditional expression -->
+        {% if post.gender == 0%}
+        Ms
+        {% elif post.gender ==1%}
+        Mr
+        {%endif%}
+        {{ post.author }} </i>
+    {% endfor %}
+    <!-- <h5> Thơ củ lạc </h5>
+    <p>
+      Lạy chúa trên cao
+      <br>
+      Turn down for what
+   </p>
+   <i> By: Nhật Minh </i>
+
+   <h5> Sầm Sơn </h5>
+   <p>
+     Sầm Sơn sóng đánh dập dồn
+     <br>
+     Chị em phụ nữ hết mình vui chơi
+    </p>
+    <i> By: Quang Dũng </i> -->
+
+  </body>
+</html>
