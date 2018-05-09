@@ -8,18 +8,18 @@ app = Flask(__name__)
 # bmi_condition = ['Severely underweight','Underweight','Normal','Overweight','Obese']
 def bmi_calc(w, h):
     h/=100                          # doi chieu cao cm => m
-    bmi_condition = ['Severely underweight','Underweight','Normal','Overweight','Obese']
     bmi= w/(h*h)
     if bmi < 16:
-        return "Your BMI: {0:10.1f}. {1}".format(bmi, bmi_condition[0])
+        condition = 'Severe underweight'
     elif 16 <= bmi <= 18.5:
-        return "Your BMI: {0:10.1f}. {1}".format(bmi, bmi_condition[1])
+        condition = 'Underweight'
     elif 18.5 <= bmi <= 25:
-        return "Your BMI: {0:10.1f}. {1}".format(bmi, bmi_condition[2])
+        condition = 'Normal'
     elif 25 <= bmi <= 30:
-        return "Your BMI: {0:10.1f}. {1}".format(bmi, bmi_condition[3])
+        condition = 'Overweight'
     else:
-        return "Your BMI: {0:10.1f}. {1}".format(bmi, bmi_condition[4])
+        condition = 'Obese'
 
+    return "Your BMI: {0:10.1f}. {1}".format(bmi, condition)
 if __name__ == '__main__':
     app.run(debug=True)

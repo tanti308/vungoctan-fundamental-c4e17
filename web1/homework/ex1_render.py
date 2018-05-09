@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index(w,h):
     h/=100                          # doi chieu cao cm => m
     bmi= (w/(h*h))
-
+    bmi = float("{0:.1f}".format(bmi))
     if bmi < 16:
         condition = 'Severe underweight'
     elif 16 <= bmi <= 18.5:
