@@ -9,13 +9,13 @@ app = Flask(__name__)
 mlab.connect()
 
 
-# @app.route('/')
-# def index():
-#     return render_template('index.html')
-
 @app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/customer')
 def search():
-    all_customer = Customer.objects(contacted=False, gender =0)
+    all_customer = Customer.objects[:10](contacted=False, gender =0)
     return render_template('search.html', all_customer=all_customer)
 
 

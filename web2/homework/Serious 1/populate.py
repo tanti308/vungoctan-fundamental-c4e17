@@ -7,7 +7,7 @@ mlab.connect()
 
 fake = Faker()
 
-for i in range(20):
+for i in range(50):
     print("Saving customer", i+1, ".......")
     customer = Customer(name = fake.name(),
                       gender= randint(0,1),
