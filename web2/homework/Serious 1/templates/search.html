@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Mùa đông rất lạnh </title>
+  </head>
+  <body>
+    <h1> Customer profile </h1>
+      {% for customer in all_customer%}
+        <div>
+          {% if customer.gender == 0%}
+            {% for i in range(10) %}
+            <img src="../static/image/tokuda.jpg" alt="">
+
+            <p>Name: {{customer.name}}</p>
+            <p>Gender: {{customer.gender}}</p>
+            <p>Email: {{customer.email}}</p>
+            <p>Phone number: {{customer.phone_number}}</p>
+            <p>Job: {{customer.job}}</p>
+            <p>Company: {{customer.company}}</p>
+            <p>Contacted: {{customer.contacted}}</p>
+            {% endfor %}
+          {% endif %}
+        </div>
+        <hr>
+        {% endfor %}
+
+  </body>
+</html>
