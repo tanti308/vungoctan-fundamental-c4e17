@@ -87,11 +87,18 @@ def measurements():
     return (mesurements)
 
 def male_image():
-    images=["https://znews-photo-td.zadn.vn/w1024/Uploaded/ohunua2/2017_10_23/14334429_966481333479105_2642026523426553856_n.jpg","https://kenh14cdn.com/2016/photo-2-1473181350922.jpg","http://s2.chacha.vn/albums/s2/4/36137/36137.jpg","https://2.bp.blogspot.com/-yToitZjBlyQ/WlxXETUC7QI/AAAAAAAASOg/e07Jl1-g64o7mQx0GKz5k6W_IRfJRI3pACLcBGAs/s1600/15940614_1839963919625975_8086361825789331208_n_2.jpg","https://i.ytimg.com/vi/zAVr9gr7MX4/maxresdefault.jpg","http://media.phunutoday.vn/files/upload_images/2014/06/23/kenny%20sang.jpg"]
+    images=["https://znews-photo-td.zadn.vn/w1024/Uploaded/ohunua2/2017_10_23/14334429_966481333479105_2642026523426553856_n.jpg","https://kenh14cdn.com/2016/photo-2-1473181350922.jpg","http://s2.chacha.vn/albums/s2/4/36137/36137.jpg","https://2.bp.blogspot.com/-yToitZjBlyQ/WlxXETUC7QI/AAAAAAAASOg/e07Jl1-g64o7mQx0GKz5k6W_IRfJRI3pACLcBGAs/s1600/15940614_1839963919625975_8086361825789331208_n_2.jpg","https://i.ytimg.com/vi/zAVr9gr7MX4/maxresdefault.jpg","http://media.phunutoday.vn/files/upload_images/2014/06/23/kenny%20sang.jpg","https://kenh14cdn.com/thumb_w/660/2017/img-7310-1506166016665-1513419731695.jpg",
+    "https://kenh14cdn.com/2017/2227893452184799150108335628580o-1507174784235-1513420021801.jpg",
+    "https://kenh14cdn.com/2017/13606444-1140457839344783-7664756729118038695-n-1501511320935-1513421477115.jpg",
+    "https://kenh14cdn.com/2017/20664687-1931280623811540-2633903832468491112-n-1505389713725-1513421614447.jpg",
+    "https://kenh14cdn.com/2017/1622868314584899174946357171376438241656832n-1507019479650-1513420491197.jpg",
+    "https://kenh14cdn.com/thumb_w/660/2017/2131471613739253460582874150518321823079014n-1507020328709-1513420681816.jpg"]
     image = choice(images)
     return(image)
 
 def female_image():
-    images=["https://baomoi-photo-1-td.zadn.vn/w1000_r1/15/09/16/105/17513189/8.jpg","http://nguoinoitieng.tv/images/nnt/95/3/ba9x.jpg","https://znews-photo-td.zadn.vn/w1024/Uploaded/oqivovbt/2018_03_04/vu_zing_1.jpg","http://designs-by-sara.com/wp-content/uploads/2016/01/hot-girl-kha-ngan-xinh-dep2-1024x768-1414054504.jpg", "https://pbs.twimg.com/profile_images/547955426885517314/dvF2D1fr.jpeg","https://image.thanhnien.vn/1600/uploaded/thuyhang/2017_10_29/img_0255_lpou.jpg","http://hotshowbiz.com/wp-content/uploads/2017/12/Ribi-Sachi-Mot-thanh-vien-ky-cuu-cua-FAPtv.jpg","https://giaitrinews.vn/wp-content/uploads/2017/10/2-Lan-Huong-trong-phim-cua-FAPtv.jpg","https://znews-photo-td.zadn.vn/w820/Uploaded/kcwvouvs/2017_04_18/15624155_1264609093595675_8005514290339512320_n.jpg"]
+    images=["https://baomoi-photo-1-td.zadn.vn/w1000_r1/15/09/16/105/17513189/8.jpg","http://nguoinoitieng.tv/images/nnt/95/3/ba9x.jpg","https://znews-photo-td.zadn.vn/w1024/Uploaded/oqivovbt/2018_03_04/vu_zing_1.jpg","http://designs-by-sara.com/wp-content/uploads/2016/01/hot-girl-kha-ngan-xinh-dep2-1024x768-1414054504.jpg", "https://pbs.twimg.com/profile_images/547955426885517314/dvF2D1fr.jpeg","https://image.thanhnien.vn/1600/uploaded/thuyhang/2017_10_29/img_0255_lpou.jpg","http://hotshowbiz.com/wp-content/uploads/2017/12/Ribi-Sachi-Mot-thanh-vien-ky-cuu-cua-FAPtv.jpg","https://giaitrinews.vn/wp-content/uploads/2017/10/2-Lan-Huong-trong-phim-cua-FAPtv.jpg","https://znews-photo-td.zadn.vn/w820/Uploaded/kcwvouvs/2017_04_18/15624155_1264609093595675_8005514290339512320_n.jpg","http://file.vforum.vn/hinh/2018/01/top-nhung-hot-girl-viet-nam-xinh-nhat-hien-nay-2018-1.png","http://file.vforum.vn/hinh/2018/01/top-nhung-hot-girl-viet-nam-xinh-nhat-hien-nay-2018-5.png",
+    "http://file.vforum.vn/hinh/2018/01/top-nhung-hot-girl-viet-nam-xinh-nhat-hien-nay-2018-27.png",
+    "http://file.vforum.vn/hinh/2018/01/top-nhung-hot-girl-viet-nam-xinh-nhat-hien-nay-2018-29.png"]
     image = choice(images)
     return(image)
