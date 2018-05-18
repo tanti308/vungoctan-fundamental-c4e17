@@ -10,6 +10,7 @@ Excercise 1:
 
 Excercise 2:
     Service.objects.get('id =....')
+    Service.objects.with_id('....')
 
 Exercise 3:
     Service.objects.get('id=....').delete()
