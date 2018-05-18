@@ -1,6 +1,5 @@
 from mongoengine import * #StringField, IntField, BooleanField, Document
 
-
 # Design database
     # Create collection
 class Service(Document):

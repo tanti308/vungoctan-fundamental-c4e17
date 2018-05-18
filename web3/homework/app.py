@@ -86,5 +86,6 @@ def delete(service_id):
         id_del.delete()
     return redirect(url_for('admin'))
 
+
 if __name__ == '__main__':
   app.run(debug=True)
