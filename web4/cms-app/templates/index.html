@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Homepage </title>
+  </head>
+  <body>
+    <h1> Homepage </h1>
+    <br>
+    <label> Login </label>
+    <a href="{{url_for('login'), user_id=user.id}}"> User login </a>
+    <br>
+
+    <label> Sign up</label>
+    <a href="{{url_for('signup')}}"> Sign up </a>
+    <br>
+
+
+    <table border="1px">
+      <thead>
+        <th>STT</th>
+        <th>Name</th>
+        <th>Yob</th>
+        <th>Gender</th>
+        <th>Height</th>
+        <th>Phone</th>
+        <th>Status</th>
+        <th>Address</th>
+        <th>Detail</th>
+      </thead>
+      <tbody>
+        {%for service in all_services%}
+
+         <tr>
+           <td>{{loop.index}}</td>
+           <td>{{service.name}}</td>
+           <td>{{service.yob}}</td>
+           <td>
+             {{"Nam" if service.gender ==1 else "Nữ"}}
+           </td>
+           <td>{{service.height}}</td>
+           <td>{{service.phone}}</td>
+           <td>
+             {{"Rảnh" if service.status else "Bận"}}
+           </td>
+           <td>{{service.address}}</td>
+           <td>
+             <a href="{{url_for('update', service_id=service.id)}}">Detail</a>
+           </td>
+         </tr>
+
+         {%endfor%}
+      </tbody>
+    </table>
+  </body>
+</html>

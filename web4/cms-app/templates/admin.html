@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Admin page </title>
+  </head>
+  <body>
+    <h1> Admin page </h1>
+    <a href="{{url_for('logout')}}">Log out</a>
+    <form method="post">
+      <label> Link </label>
+      <input type="text" name="link" value="">
+
+      <input type="submit" name="" value="submit">
+    </form>
+    <table border='1px'>
+      <thead>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Ảnh</th>
+        <th>Views</th>
+        <th>Link</th>
+        <th>Detail</th>
+      </thead>
+      <tbody>
+        {% for video in videos %}
+        <tr>
+          <td>{{loop.index}}</td>
+          <td>{{video.title}}</td>
+          <td>{{video.views}}</td>
+          <td>{{video.link}}</td>
+          <td>
+            <img src="{{video.thumbnail}}" width="200px"  height="130px" >
+          </td>
+
+        </tr>
+
+        {% endfor %}
+
+      </tbody>
+
+    </table>
+
+  </body>
+</html>
