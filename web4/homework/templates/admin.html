@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Admin route </title>
+  </head>
+  <body>
+    <h1> Admin page </h1>
+    <table border="1px">
+      <thead>
+        <th>STT</th>
+        <th>name</th>
+        <th>yob</th>
+        <th>gender</th>
+        <th>height</th>
+        <th>phone</th>
+        <th>address</th>
+        <th>description</th>
+        <th>measurements</th>
+        <th>status</th>
+        <th>Sửa/xóa</th>
+      </thead>
+      <tbody>
+        {%for service in all_services%}
+
+         <tr>
+           <td>{{loop.index}}</td>
+           <td>{{service.name}}</td>
+           <td>{{service.yob}}</td>
+           <td>
+             {{"Nam" if service.gender ==1 else "Nữ"}}
+           </td>
+           <td>{{service.height}}</td>
+           <td>{{service.phone}}</td>
+           <td>{{service.address}}</td>
+           <td>{{service.description}}</td>
+           <td>{{service.measurements}}</td>
+           <td>{{service.status}}</td>
+           <td>
+             {{"Rảnh" if service.status else "Bận"}}
+           </td>
+           <td>
+             <a href="{{url_for('update', service_id=service.id)}}">Sửa</a>
+             <a href="{{url_for('delete', service_id=service.id)}}">Xóa</a>
+           </td>
+         </tr>
+
+         {%endfor%}
+      </tbody>
+    </table>
+  </body>
+</html>
