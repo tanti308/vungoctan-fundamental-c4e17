@@ -1,18 +1,18 @@
-from mongoengine import * #StringField, IntField, BooleanField, Document
+from mongoengine import * #StringField, IntField, BooleanField, Document, ListField, ImageField
 
-# Design database
-    # Create collection
+import mlab
+
 class Service(Document):
-    image = StringField()
     name = StringField()
     yob = IntField()
     gender = IntField()
-    email = StringField()
     height = IntField()
-    measurements = ListField()
     phone = StringField()
-    description = ListField()
     address = StringField()
-    job = StringField()
-    company = StringField()
     status = BooleanField()
+    description = StringField()
+    measurements = ListField()
+    image = StringField()
+    email = StringField()
+    company = StringField()
+    job = StringField()

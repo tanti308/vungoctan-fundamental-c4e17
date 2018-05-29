@@ -2,12 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-
+    <link rel="icon" type='image/ico' href="static/love.icon">
     <title>Detail</title>
   </head>
   <body>
     <h2>Services detail</h2>
-
       <div>
         <img src="{{ service.image }}" alt="">
         <h3>
@@ -25,7 +24,7 @@
         {% elif service.status == false %}
         <p>Status: Rảnh</p>
         {% endif %}
-
+        <a href="{{ url_for('order', service_id=service.id)}}">ORDER</a>
       </div>
   </body>
 </html>

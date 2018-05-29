@@ -1,8 +1,7 @@
 from mongoengine import *
 
-
-class User(document):
-    fullname = StringField()
+class User(Document):
+    name = StringField()
     email = StringField()
-    username = StringField()
+    account = StringField()
     password = StringField()
