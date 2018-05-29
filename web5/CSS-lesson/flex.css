@@ -1,0 +1,30 @@
+#flex-box {
+  height: 500px;
+  background-color: #ccc;
+  display: flex;
+  flex-flow: row wrap;
+  /* justify-content: space-between; */
+  align-items: center;
+
+}
+
+.h-100px {
+    height: 100px;
+}
+
+.w-100px {
+  width: 100px;
+}
+
+.bg-lightgreen {
+  background-color: lightgreen;
+}
+
+.m-10px {
+  margin: 10px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
